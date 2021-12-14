@@ -21,7 +21,7 @@ createServer((req, res) => {
 
   switch (req.url) {
     case "/":
-      return sendFile(res, 200, "text/html", "/index.html");
+      return sendFile(res, 200, "text/html", "./index.html");
     case "/contact":
       return sendFile(res, 200, "text/html", "./contact.html");
     case "/img/alex-banks.jpeg":
